@@ -36,7 +36,6 @@ This is a full-stack application developed using Angular for the frontend, Sprin
    mvn clean install
    mvn spring-boot:run
    
-3. API is available at http://localhost:8080
 
 ### Frontend Setup (Angular)
 1. Navigate to the frontend directory:
@@ -52,6 +51,7 @@ This is a full-stack application developed using Angular for the frontend, Sprin
    ng s
    
 4. The application will be available at http://localhost:4200
+   
 5.System Login 
 •	UserName : Admin
 •	Password :1234
