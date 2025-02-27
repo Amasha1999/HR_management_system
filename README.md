@@ -53,7 +53,9 @@ This is a full-stack application developed using Angular for the frontend, Sprin
 4. The application will be available at http://localhost:4200
    
 5.System Login 
+
 •	UserName : Admin
+
 •	Password :1234
       
 
