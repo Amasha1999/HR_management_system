@@ -57,6 +57,16 @@ This is a full-stack application developed using Angular for the frontend, Sprin
 •	UserName : Admin
 
 •	Password :1234
+
+ Screenshots
+
+
+![images](image1.png)
+![images](image2.png)
+![images](image3.png)
+![images](image4.png)
+![images](image5.png)
+![images](image6.png)
       
 
 
