@@ -61,7 +61,7 @@ This is a full-stack application developed using Angular for the frontend, Sprin
  Screenshots
 
 
-![images]([image1.png](https://github.com/Amasha1999/HR_management_system/blob/main/images/image1.png))
+![images](images/image1.png)
 ![images](image2.png)
 ![images](image3.png)
 ![images](image4.png)
