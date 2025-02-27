@@ -54,7 +54,7 @@ This is a full-stack application developed using Angular for the frontend, Sprin
    
 5.System Login 
 
-•	UserName : Admin
+•	UserName : admin
 
 •	Password :1234
 
