@@ -1,4 +1,4 @@
-# Employee & Department Management System
+# Employee Management System
 
 ## Project Overview
 This is a full-stack application developed using Angular for the frontend, Spring Boot for the backend, and MongoDB as the database. The system allows HR managers to efficiently manage employees and departments.
