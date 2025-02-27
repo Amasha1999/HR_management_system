@@ -1,0 +1,32 @@
+<div class="parent clearfix" >
+  <div class="bg-illustration"></div>
+  <div class="login">
+    <div class="container">
+
+      <div style="display: flex;justify-content: center;">
+        <h1 style="color: #ffffff">HR Management System</h1>
+      </div>
+      <br/>
+      <div class="login-form">
+        <input type="text" placeholder="User Name"  [(ngModel)]="userLoginDto.userName" style="border: 1px solid #565656; color: #faf8f8">
+        <!--          <input type="text" placeholder="User Name"  [(ngModel)]="user.userName">-->
+        <input type="password" placeholder="Password"  [(ngModel)]="userLoginDto.password" style="border: 1px solid #565656; color: #faf8f8">
+
+        <button type="submit" (click)="login()">LOG-IN</button>
+        <section style="display: flex;justify-content: center;margin-top: 5vh">
+          <h3 style="color: #ffffff">Edhirya IT</h3>
+        </section>
+        <section style="display: flex;justify-content: center;">
+          <p style="color: #ffffff" >
+            <a href="http://www.edhirya.com/" target="_blank" style="color: #ffffff">www.edhiriya.com</a>
+          </p>
+
+        </section>
+<!--        <section style="display: flex;justify-content: center;">-->
+<!--          <p style="color: #1f1d2b;font-size: 10px">latest update 12/08/2023</p>-->
+<!--        </section>-->
+      </div>
+    </div>
+  </div>
+</div>
+

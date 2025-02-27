@@ -1,0 +1,202 @@
+.wrapper{
+  width: 82vw;
+  height: 94vh;
+  justify-content: space-evenly;
+  font-size: 12px;
+  animation: slide-in 0.7s ease-in-out;
+  background: #252836;
+
+}
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.top-section{
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.down-section{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+section{
+  width: 48%;
+  padding: 5px 5px 5px 5px;
+  border-radius: 4px;
+  background: rgba(74, 86, 100, 0.49);
+  border: 1px solid #727272;
+}
+
+.down-section section{
+  width: 30%;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+label{
+  color: #d9d9d9;
+  font-size: 1vw;
+}
+i{
+  margin-right: 3px;
+}
+i{
+  padding-right: 3px;
+}
+.btn-clear{
+  color: #ffffff;
+  border: none;
+  background: #a5cc2e;
+}
+.btn-save{
+  border: none;
+  color: #ffffff;
+  background: #2ecc71;
+}
+table{
+  width: 100%;
+  justify-content: center;
+}
+.table-subDepartment{
+  cursor: pointer;
+  max-height: 55vh;
+  overflow-y: auto;
+}
+.table-Department{
+  cursor: pointer;
+  max-height: 55vh;
+  overflow-y: auto;
+}
+.input-group{
+  margin-top: 5px;
+}
+input{
+  opacity: .8;
+  font-size: 13px;
+  text-align: end;
+}
+.input-group-text{
+  font-size: 13px;
+}
+option{
+  font-size: 13px;
+}
+span{
+  font-size: 12px;
+  text-align: end;
+}
+.span-width1{
+  width: 9vw;
+}
+.span-width2{
+  width: 11vw;
+}
+.button{
+  cursor: pointer;
+  margin-right: 1%;
+}
+.custom-select{
+  font-size: 12px;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+
+  thead {
+    background: #a1a1a1;
+  }
+}
+
+/* Style the table header (th) */
+th {
+  background-color: #b6b6b6;
+  color: #fff;
+  padding: 4px;
+  text-align: left;
+}
+
+/* Style the table cells (td) */
+td {
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #d0d0d0;
+}
+tr {
+  background-color: #e0e0e0;
+}
+/* Style the "Edit" cell with a button appearance */
+td.edit {
+  text-align: center;
+}
+
+/* Style the "Is Active" cell with a green or red indicator */
+td.is-active {
+  text-align: center;
+}
+
+
+.fas{
+  text-align: center;
+  color: #f8f8f8;
+  width: 20px;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 50px;
+}
+.update{
+  cursor: pointer;
+  background: #2ecc71;
+
+}
+
+
+.icon{
+  text-align: center;
+}
+.iconRed {
+  text-align: center;
+  background: red;
+}
+.isActive {
+  text-align: center;
+  cursor: pointer;
+  background: #eade30;
+}
+.delete {
+  text-align: center;
+  cursor: pointer;
+  background: #dc2830;
+}
+section{
+  padding: 15px 15px 15px 15px;
+  cursor: pointer;
+  max-height: 100vh; /* Set your desired max height here */
+  overflow-y: auto;
+  border-radius: 4px;
+  background: rgba(74, 86, 100, 0.49);
+  border: 1px solid #727272;
+  height: 88vh;
+}
+input{
+  opacity: .8;
+  font-size: 12px;
+  text-align: end;
+}
+
+select{
+  background-color: #d9d9d9;
+}

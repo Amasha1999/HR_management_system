@@ -1,0 +1,255 @@
+.wrapper{
+  display: flex;
+
+}
+.menu{
+  width: 18vw;
+  height: 94vh;
+  background: #1f1d2b;
+  font-size: 14px;
+  color: #fff;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.main-panel{
+  width: 82vw;
+  height: 94vh;
+  background: #f5f5f5;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.bg-illustration {
+  position: relative;
+  width: 82vw;
+  height: 94vh;
+  background-image: url('https://i0.wp.com/www.sutisoft.com/blog/wp-content/uploads/2015/04/HR-Management-Systems-scaled.jpeg?fit=640%2C360&ssl=1');
+  background-size: cover;
+
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.menu ul li a:hover {
+  color: #efefef;
+}
+
+.menu li a {
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.menu li a i {
+  margin-right: 5px;
+}
+
+
+/*.sub-menu {
+
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.show {
+  display: block;
+  max-height: 1000px; !* Adjust the value based on your content height *!
+  opacity: 1;
+}*/
+
+.sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.10s ease, opacity 0.10s ease;
+}
+
+.show {
+  display: block;
+  max-height: 1000px; /* Adjust the value based on your content height */
+  opacity: 1;
+  transition: max-height 0.10s ease, opacity 0.10s ease;
+}
+
+/*.scroll-down {*/
+/*  transform: translateY(-100%);*/
+/*  transition: transform 0.3s ease;*/
+/*}*/
+
+/*.scroll-up {*/
+/*  transform: translateY(0);*/
+/*  transition: transform 0.3s ease;*/
+/*}*/
+.dark-mode {
+  background-color: #3f3f3f; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+/* Style for the <ul> element */
+ul {
+
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style for the <li> elements */
+ul li {
+  padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* Add some space between list items */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Style for the <a> elements inside <li> */
+ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  display: block; /* Make the entire list item clickable */
+  padding: 5px; /* Add padding for better clickability */
+}
+
+/* Hover effect for <li> elements */
+ul li:hover {
+  background-color: #5d5d5d; /* Change background color on hover */
+}
+
+ul li ul li:hover {
+  background-color: #444343; /* Change background color on hover */
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+ul li ul li ul li:hover {
+  background-color: #5d5d5d; /* Change background color on hover */
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+/* Icon style */
+ul li i {
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+li.highlighted {
+  background-color: #444343;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+li.highlighted:hover {
+  background-color: #444343;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.guest_details_table{
+  width: 100%;
+  font-size: 12px;
+}
+.column{
+  padding-left: 10px;
+  border-right: 1px solid #d0d0d0;
+  padding-right: 10px;
+  background: #f1f1f1;
+}
+
+.btn-close {
+  background-color: #ff0d0d; /* Change to desired color */
+  color: white; /* Change text color if needed */
+  /* Add any other styles as needed */
+}
+
+
+label{
+  color: #d9d9d9;
+  font-size: 1vw;
+}
+.input-group-text{
+  width: 28%; /* Adjust the width as needed */
+
+}
+.btn btn-primary {
+  background-color: lightsteelblue;
+  color: grey;
+}
+
+
+.input {
+  margin: 0.4rem;
+}
+
+
+.modal{
+  width: 100%;
+}
+
+.popup-background{
+  background: #252836;
+}
+.input-group-sm{
+  margin-bottom: 8px;
+}
+.search-table{
+  cursor: pointer;
+  max-height: 52vh;
+  overflow-y: auto;
+}
+table {
+  width: 100%;
+  justify-content: center;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+thead {
+  background: #a1a1a1;
+}
+
+.selectionSize{
+  width: 10vw;
+  margin-left: 10px;
+  font-size: 15px;
+}
+th {
+  background-color: #b6b6b6;
+  color: #fff;
+  padding: 4px;
+  text-align: left;
+}
+
+td {
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #d0d0d0;
+}
+
+tr {
+  background-color: #e0e0e0;
+}
+
+
+.fa-print{
+  cursor: pointer;
+  color: #ffffff;
+  padding: 5px;
+  background: #35e03d;
+  border-radius: 100%;
+  box-shadow: 0 8px 12px rgba(189, 183, 183, 0.2);
+}

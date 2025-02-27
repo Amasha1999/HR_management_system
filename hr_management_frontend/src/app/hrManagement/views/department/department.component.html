@@ -1,0 +1,60 @@
+<div class="wrapper">
+  <div class="top-section">
+    <section>
+      <label><b>Department</b></label>
+      <br/>
+      <br/>
+      <div class="input-group input-group-sm ">
+        <span class="input-group-text span-width1">Department Name</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+               aria-describedby="inputGroup-sizing-sm" [(ngModel)]="departmentDto.departmentName">
+      </div>
+      <div class="input-group input-group-sm ">
+        <span class="input-group-text span-width1">Description</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+               aria-describedby="inputGroup-sizing-sm" [(ngModel)]="departmentDto.description">
+      </div>
+      <div class="input-group" style="justify-content: end">
+        <span class="input-group-text button btn-clear" (click)="clearData()"><i class="fas fa-trash"></i> Clear</span>
+        <span class="input-group-text button btn-save" (click)="addDepartment()"><i class="fas fa-save"></i> Save & Update</span>
+      </div>
+      <br/>
+
+
+    </section>
+    <section>
+      <label><b>Department List</b></label>
+      <br/>
+      <div class="input-group input-group-sm" style="width: 42%;margin-left: 58%;">
+        <input type="text" class="form-control" aria-label="Sizing example input"
+               placeholder=" Department name And DepNumber " >
+      </div>
+      <div class="search-table2">
+        <table>
+          <thead>
+          <td style="text-align: center; font-weight: bold;">Department Name</td>
+          <td style="text-align: center; font-weight: bold;">Description</td>
+          <td style="text-align: center; font-weight: bold;"></td>
+          <td style="text-align: center; font-weight: bold;"></td>
+          <td style="text-align: center; font-weight: bold;"></td>
+
+          </thead>
+
+
+          <tr *ngFor="let obj of departmentDtoList">
+            <td>{{obj.departmentName}}</td>
+            <td>{{obj.description}}</td>
+            <td class="icon"><i class="fas update fa-edit" (click)="editDepartment(obj)"></i></td>
+            <td class="icon"><i class="fas isActive fa-eye"></i></td>
+            <td class="icon"><a><i class="fas delete fa-trash" (click)="confirmDelete(obj.id)"></i></a></td>
+          </tr>
+
+        </table>
+
+
+      </div>
+
+
+    </section>
+  </div>
+</div>

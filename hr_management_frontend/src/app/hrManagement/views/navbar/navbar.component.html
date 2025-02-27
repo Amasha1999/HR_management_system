@@ -1,0 +1,17 @@
+<header class="col-12">
+  <div class="col-6">  <a class="navbar-brand" ><span style="font-weight: 500; color: white; cursor:pointer" data-target="#aboutUsPopup" data-toggle="modal">Edhirya IT</span></a>
+    <a style="padding-left: 15vw;color: white;"><span >{{time | date:'dd-MM-yyyy'}}  </span> |
+      <span>{{CurrentTime}}</span>
+    </a>
+  </div>
+  <div class="col-3" style="color: white;"> HR Management System </div>
+  <div class="col-3" style="display: flex;justify-content: end">
+    <button class="button-6" (click)="toggleFullscreen()">
+      <i [class]="isFullScreen === 'Yes' ? 'fas fa-compress' : 'fas fa-expand'"></i></button>
+    <button class="logOut" (click)="logOut()" > <i class="fas fa-sign-out-alt"></i> </button>
+
+
+
+  </div>
+</header>
+

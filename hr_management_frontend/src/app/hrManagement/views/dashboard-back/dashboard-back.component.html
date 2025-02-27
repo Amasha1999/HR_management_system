@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="menu">
+    <ul>
+
+
+      <li [class.highlighted]="selectedSubListItem === 'Employee'"
+          (click)="selectSubListItem('Employee')">
+        <a (click)="loadPage('/dashboard-back/employee')"> Employee </a>
+      </li>
+
+      <li [class.highlighted]="selectedSubListItem === 'Department'"
+          (click)="selectSubListItem('Department')">
+        <a (click)="loadPage('/dashboard-back/department')"> Department </a>
+      </li>
+
+
+
+    </ul>
+
+
+  </div>
+  <div class="main-panel bg-illustration">
+    <router-outlet>
+    </router-outlet>
+  </div>
+</div>
+

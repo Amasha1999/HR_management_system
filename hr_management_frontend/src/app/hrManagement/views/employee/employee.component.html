@@ -1,0 +1,116 @@
+<div class="wrapper">
+
+  <div class="top-section">
+
+    <section>
+      <div class="form-height">
+
+        <label><b>Add Employee</b></label>
+        <br/>
+
+        <div class="input-group input-group-sm ">
+          <span class="input-group-text span-width1">Employee Name</span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+                 aria-describedby="inputGroup-sizing-sm" [(ngModel)]='employeeDto.name'>
+        </div>
+        <div class="input-group input-group-sm ">
+          <span class="input-group-text span-width1">Email</span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+                 aria-describedby="inputGroup-sizing-sm" [(ngModel)]="employeeDto.email">
+        </div>
+        <div class="input-group input-group-sm ">
+          <span class="input-group-text span-width1">Phone Number </span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+                 aria-describedby="inputGroup-sizing-sm" [(ngModel)]="employeeDto.phone">
+        </div>
+        <div class="input-group input-group-sm ">
+          <span class="input-group-text span-width1">Address</span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+                 aria-describedby="inputGroup-sizing-sm" [(ngModel)]="employeeDto.address">
+        </div>
+        <div class="input-group input-group-sm ">
+          <span class="input-group-text span-width1">Job Role</span>
+          <select class="form-select" [(ngModel)]="employeeDto.jobTitle">
+            <option value ="Senior Software Engineer">Senior Software Engineer</option>
+            <option value ="Software Engineer">Software Engineer</option>
+            <option value ="Associate Software Engineer">Associate Software Engineer</option>
+          </select>
+        </div>
+        <div class="input-group input-group-sm ">
+          <span class="input-group-text span-width1">Department</span>
+          <select class="form-select" [(ngModel)]="employeeDto.departmentId">
+            <option [value]="obj.id"
+                    *ngFor="let obj of departmentDtoList">{{ obj.departmentName }}
+            </option>
+          </select>
+        </div>
+        <div class="input-group input-group-sm ">
+          <span class="input-group-text span-width1">Status</span>
+          <select class="form-select" [(ngModel)]="employeeDto.status">
+            <option [value]="1" >Active</option>
+            <option [value]="2" >Inactive</option>
+          </select>
+        </div>
+        <div class="input-group" style="justify-content: end">
+          <span class="input-group-text button btn-clear" (click)="clearData()"><i
+            class="fas fa-trash"></i> Clear</span>
+          <span class="input-group-text button btn-save" (click)="addEmployee()" ><i
+            class="fas fa-save"></i> Save & Update</span>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <section>
+      <label><b>Employee List</b></label>
+      <br/>
+      <div class="input-group input-group-sm" style="width: 45%;margin-left: 25%;">
+        <input type="text" class="form-control" aria-label="Sizing example input"
+               placeholder="Filter By Name / Department / Role " (input)="filterByFinAccNoAndName($event)">
+      </div>
+      <div class="search-table2">
+        <table>
+          <thead>
+          <td style="text-align: center; font-weight: bold;">Name</td>
+          <td style="text-align: center; font-weight: bold;">Email</td>
+          <td style="text-align: center; font-weight: bold;">Phone</td>
+          <td style="text-align: center; font-weight: bold;">Address</td>
+          <td style="text-align: center; font-weight: bold;">Role</td>
+          <td style="text-align: center; font-weight: bold;">Department</td>
+          <td style="text-align: center; font-weight: bold;">Status</td>
+          <td style="text-align: center; font-weight: bold;"></td>
+<!--          <td style="text-align: center; font-weight: bold;"></td>-->
+          <td style="text-align: center; font-weight: bold;"></td>
+          </thead>
+
+
+          <tr *ngFor="let obj of employeeDtoListTemp">
+            <td>{{ obj.name }}</td>
+            <td>{{ obj.email }}</td>
+            <td>{{ obj.phone }}</td>
+            <td>{{ obj.address }}</td>
+            <td>{{ obj.jobTitle }}</td>
+            <td>{{ getDepartmentNameById(obj.departmentId) }}</td>
+            <td>
+              <ng-container *ngIf="obj.status == 1">Active</ng-container>
+              <ng-container *ngIf="obj.status == 0">Inactive</ng-container>
+            </td>
+            <td class="icon"><i class="fas update fa-edit" (click)="editEmployee(obj)"></i></td>
+<!--            <td class="icon"><i class="fas isActive fa-eye"></i></td>-->
+            <td class="icon"><a><i class="fas delete fa-trash" (click)="confirmDelete(obj.id)"></i></a></td>
+          </tr>
+
+        </table>
+
+
+      </div>
+
+
+    </section>
+
+
+  </div>
+</div>
