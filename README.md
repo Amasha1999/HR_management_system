@@ -62,11 +62,11 @@ This is a full-stack application developed using Angular for the frontend, Sprin
 
 
 ![images](images/image1.png)
-![images](image2.png)
-![images](image3.png)
-![images](image4.png)
-![images](image5.png)
-![images](image6.png)
+![images](images/image2.png)
+![images](images/image3.png)
+![images](images/image4.png)
+![images](images/image5.png)
+![images](images/image6.png)
       
 
 
